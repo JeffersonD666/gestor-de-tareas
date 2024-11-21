@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Tareas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gestor de Tareas</h1>
+    <div class="task-input">
+      <input type="text" id="taskName" placeholder="Nombre de la tarea">
+      <div class="importance-buttons">
+        <button id="highPriority" class="btn">ALTO</button>
+        <button id="lowPriority" class="btn">BAJO</button>
+      </div>
+      <button id="addTask" class="btn add">AGREGAR</button>
+    </div>
+
+    <div class="task-list">
+      <div class="tasks high-priority">
+        <h2>Tareas de Alta Prioridad</h2>
+        <ul id="highPriorityList"></ul>
+      </div>
+      <div class="tasks low-priority">
+        <h2>Tareas de Baja Prioridad</h2>
+        <ul id="lowPriorityList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
